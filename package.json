@@ -1,6 +1,6 @@
 {
   "name": "@dfreeman/why-yes-i-do-have-types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A testbed for ember-cli-typescript addon support.",
   "keywords": [
     "ember-addon"
