@@ -13,8 +13,8 @@
     "paths": {
       "dummy/tests/*": ["tests/*"],
       "dummy/*": ["tests/dummy/app/*"],
-      "why-yes-i-do-have-types": ["addon"],
-      "why-yes-i-do-have-types/*": ["addon/*"]
+      "@dfreeman/why-yes-i-do-have-types": ["addon"],
+      "@dfreeman/why-yes-i-do-have-types/*": ["addon/*"]
     }
   },
   "include": [
