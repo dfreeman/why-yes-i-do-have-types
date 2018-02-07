@@ -1,7 +1,7 @@
 {
-  "name": "why-yes-i-do-have-types",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "@dfreeman/why-yes-i-do-have-types",
+  "version": "1.0.0",
+  "description": "A testbed for ember-cli-typescript addon support.",
   "keywords": [
     "ember-addon"
   ],
@@ -16,23 +16,29 @@
     "build": "ember build",
     "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests",
     "start": "ember serve",
-    "test": "ember try:each"
+    "test": "ember try:each",
+    "prepack": "ember ts:precompile",
+    "postpack": "ember ts:clean"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.6.0"
+    "ember-cli-babel": "^6.6.0",
+    "ember-cli-htmlbars": "^2.0.1"
   },
   "devDependencies": {
+    "@types/ember": "^2.8.8",
+    "@types/ember-testing-helpers": "^0.0.3",
+    "@types/rsvp": "^4.0.1",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~2.18.1",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.2.1",
-    "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-qunit": "^4.1.1",
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
+    "ember-cli-typescript": "typed-ember/ember-cli-typescript#addon-support",
     "ember-cli-uglify": "^2.0.0",
     "ember-disable-prototype-extensions": "^1.1.2",
     "ember-export-application-global": "^2.0.0",
@@ -41,7 +47,8 @@
     "ember-source": "~2.18.0",
     "eslint-plugin-ember": "^5.0.0",
     "eslint-plugin-node": "^5.2.1",
-    "loader.js": "^4.2.3"
+    "loader.js": "^4.2.3",
+    "typescript": "^2.7.1"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
